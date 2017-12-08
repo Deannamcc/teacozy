@@ -9,81 +9,72 @@ body {
 }
 
 /* Header */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
 header {
-   display:inline-flex;
    width:100%;
    height:69px;
    border-bottom:1px solid seashell;
    position: fixed;
    z-index: 1;
    background-color: black;
-
  }
-
-
-
-
-header img {
-  display: flex;
-  align-self: flex-start;
-
-}
 
  nav {
    text-align: right;
    text-decoration: underline;
 
-
  }
+
    nav span  {
     display:inline-block;
-    justify-content: flex-end;
-   padding: 20px 10px;
+    padding: 20px 10px;
+
  }
 
- header img{
+ header img {
    color: seashell;
    padding-left:10px;
    padding-top: 10px;
    height: 50px;
+   display: inline-flex;
  }
+
 a {
-  font-family: Helvetica;
-  font-size: 22px;
   color: seashell;
-  background-color: black;
-  opacity: 0.9;
 
 }
 
 
 
-/* Main Content */
+/* Mission */
+
+
 
  #mission {
    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
    text-align: center;
-   align-content: center;
    height: 700px;
-
    padding-top: 80px;
  }
-.
 
-#mission .content{
+#mission .flex-container{
   margin:auto;
   background-color: black;
   width: 100%;
 }
-h2 {
+h2 h4{
   display:block;
+  margin: 0;
   font-weight: bold;
 }
 
-h4 {
-  display:block;
-  font-weight: bold;
-}
  /* Tea of the Month */
 
  #tea {
@@ -93,14 +84,14 @@ h4 {
    padding-top: 50px;
  }
 
-#tea  h2, h4 {
-   display:flex;
-   justify-content: center;
-   text-align: center;
-   padding: 10px;
-   flex-wrap: wrap;
-   font-weight: bold;
- }
+ #tea  h2, h4 {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-weight: bold;
+  }
 
  .content {
    display: inline-block;
@@ -133,33 +124,41 @@ h4 {
 
 
 }
+/* Locations */
 
  #locations h2 {
-   display:flex;
-   justify-content: center;
    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
    height: 500px;
    padding-bottom: 15px;
+   display:flex;
+   justify-content: center;
+   padding-top: 50px;
+   padding-bottom: 15px;
  }
 
- .flex-container locations{
-   display: block;
-   margin-left: 40px;
-   margin-right: 40px;
-   width: 300px;
-   height: 300px;
- }
+#locations .container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 
- .address{
+}
+ .location {
    display: flex;
    flex-direction: column;
    text-align: center;
    margin: 5px 40px;
    background-color: black;
    width: 300px;
-   height: 300px;
-   opacity: 1;
  }
+
+ h3 {
+   display: block;
+   padding: 2px;
+   font-weight: bold;
+
+ }
+
+/* Contact */
 
  #contact {
    display:flex;
