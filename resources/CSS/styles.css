@@ -29,13 +29,11 @@ header {
  nav {
    text-align: right;
    text-decoration: underline;
-
  }
 
-   nav span  {
+ nav span  {
     display:inline-block;
     padding: 20px 10px;
-
  }
 
  header img {
@@ -48,30 +46,26 @@ header {
 
 a {
   color: seashell;
-
 }
-
-
 
 /* Mission */
 
-
-
  #mission {
-   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
    text-align: center;
    height: 700px;
+   width: 1200px;
    padding-top: 80px;
  }
 
-#mission .flex-container{
+ .flex-container{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   margin:auto;
   background-color: black;
   width: 100%;
 }
-h2 h4{
+#mission h2, h4{
   display:block;
-  margin: 0;
+  margin: 15px;
   font-weight: bold;
 }
 
@@ -80,7 +74,7 @@ h2 h4{
  #tea {
    height: 700px;
    width: 1000px;
-   margin:auto;
+   margin: auto;
    padding-top: 50px;
  }
 
@@ -97,10 +91,8 @@ h2 h4{
    display: inline-block;
    align-content: center;
    background-color: black;
-   height: 100px;
    width: 100%;
    margin-top: 300px;
-
  }
 
  .item img{
@@ -121,27 +113,30 @@ h2 h4{
   margin-bottom: 5px;
   margin-left: 2px;
   margin-right: 2px;
-
-
 }
 /* Locations */
 
- #locations h2 {
+ #locations {
    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
    height: 500px;
-   padding-bottom: 15px;
-   display:flex;
+   width: 1200px;
    justify-content: center;
-   padding-top: 50px;
    padding-bottom: 15px;
+   padding-top: 50px;
+   margin: auto;
  }
 
 #locations .container{
    display: flex;
    justify-content: space-around;
    align-items: center;
-
 }
+
+#locations h2 {
+  margin: 15px;
+  text-align: center;
+}
+
  .location {
    display: flex;
    flex-direction: column;
@@ -151,7 +146,7 @@ h2 h4{
    width: 300px;
  }
 
- h3 {
+ #locations h3 {
    display: block;
    padding: 2px;
    font-weight: bold;
@@ -173,5 +168,7 @@ h2 h4{
    text-align: left;
    margin-left: 20px;
    margin-top: 80px;
-   font-size: 22px;
+   margin-bottom: 20px;
+   font-size: 20px;
+   font-weight: bold;
  }
